@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+# Add a before filter;Allows only logged in users to add places
+  before_action :authenticate_user!, only: [:new, :create] 
 
   def index
 # Perform a paginated query; use an explicit "per page" limite:
@@ -10,7 +12,7 @@ class PlacesController < ApplicationController
   end
 
   def create
-    Place.create(place_params) 
+    current_user.places.create(place_params) 
     redirect_to root_path
   end
 
