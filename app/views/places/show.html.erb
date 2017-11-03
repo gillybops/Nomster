@@ -65,13 +65,15 @@
       </div>
     </div>
 
-  <!-- Button trigger modal -->
   <div class="col-10 offset-1">
     <h1 class="float-left">Comments</h1>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#exampleModal">
       Add a Comment 
     </button>
   </div>
+
+  <div class="clear"></div>
 
   <div class="row">
     <% @place.comments.each do |comment| %>
