@@ -1,0 +1,20 @@
+LOCALHOST TROUBLESHOOTING
+Rails 5.0.6
+Ruby 2.3.1
+
+ADD THIS TO GEMFILE:=
+group :development do
+  gem 'better_errors'
+  gem  'binding_of_caller'
+end
+------------------------------------------------------------
+>bundle install
+THEN GO TO:=
+/config/environments/development.rb
+
+ADD THE FOLLOWING:=
+# Allow usage of better_errors on Vagrant
+  BetterErrors::Middleware.allow_ip! "10.0.2.2"
+
+# Show full error reports and disable caching.
+  config.consider_all_requests_local = true [*already had this*]

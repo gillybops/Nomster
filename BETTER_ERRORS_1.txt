@@ -1,0 +1,81 @@
+Request info
+
+Request parameters			{"controller"=>"places", "action"=>"show", "id"=>"32"}
+
+Rack session				(object too large. Modify ActionDispatch::Request::Session#inspect or
+					increase BetterErrors.maximum_variable_inspect_size)
+
+
+Local Variables
+
+local_assigns				{}
+
+output_buffer				nil
+
+_old_virtual_path			nil
+
+_old_output_buffer			nil
+
+
+Instance Variables
+
+@_routes				nil
+
+@_config				{}
+
+@view_renderer	         		#<ActionView::Renderer:0x007f4f22d0fb60 @lookup_context=#
+					<ActionView::LookupContext:0x007f4f21cf01a8 @details_key=#
+					<ActionView::LookupContext::DetailsKey:0x007f4f22c7c400 
+					@digest_cache=#<Concurrent::Map:0x007f4f22c7c3d8 entries=0 
+					default_proc=nil>>, @cache=true, @prefixes=["places",
+					"application"], @rendered_format=:html, @details={:locale=>[:en],
+					:formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html,
+					:builder, :ruby, :coffee, :jbuilder]}, @view_paths=#
+					<ActionView::PathSet:0x007f4f21cdbf50 @paths=[#
+					<ActionView::OptimizedFileSystemResolver:0x007f4f2324d488
+					@pattern=":prefix/:action{.:locale,}{.:formats,}{+:variants,}
+					{.:handlers,}", @cache=#<ActionView::Resolver::Cache:0x7f4f2324d460
+					keys=1 queries=0>, @path="/vagrant/src/nomster/app/views">, #
+					<ActionView::OptimizedFileSystemResolver:0x007f4f2324db68
+					@pattern=":prefix/:action{.:locale,}{.:formats,}{+:variants,}
+					{.:handlers,}", @cache=#<ActionView::Resolver::Cache:0x7f4f2324daf0
+					keys=1 queries=0>, 
+					@path="/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/
+					2.3.0/gems/devise-4.3.0/app/views">]>>>
+
+@marked_for_same_origin_verification	true
+
+@place					#<Place id: 32, name: "Pa-Nash", address: "144-14 243rd Street,
+					Rosedale, NY 11422", description: "\"Stylish restaurant offering
+					classic Mediterranean...", created_at: "2017-11-01 06:32:07",
+					updated_at: "2017-11-01 06:32:07", user_id: 1, latitude: 40.6600997,
+					longitude: -73.7398567>
+
+@comment				#<Comment id: nil, message: nil, rating: nil, user_id: nil, place_id:
+					nil, created_at: nil, updated_at: nil>
+
+@photo					#<Photo id: nil, caption: nil, place_id: nil, created_at: nil,
+					updated_at: nil>
+
+@_assigns				{"marked_for_same_origin_verification"=>true, "place"=>#<Place id: 32,
+					name: "Pa-Nash", address: "144-14 243rd Street, Rosedale, NY 11422",
+					description: "\"Stylish restaurant offering classic Mediterranean...",
+					created_at: "2017-11-01 06:32:07", updated_at: "2017-11-01 06:32:07",
+					user_id: 1, latitude: 40.6600997, longitude: -73.7398567>,
+					"comment"=>#<Comment id: nil, message: nil, rating: nil, user_id: nil,
+					place_id: nil, created_at: nil, updated_at: nil>, "photo"=>#<Photo id:
+					nil, caption: nil, place_id: nil, created_at: nil, updated_at: nil>}
+
+					@_controller	(object too large. Modify PlacesController#inspect or increase 
+					BetterErrors.maximum_variable_inspect_size)
+
+@_request				(object too large. Modify ActionDispatch::Request#inspect or increase
+					BetterErrors.maximum_variable_inspect_size)
+
+@_default_form_builder			nil
+
+@view_flow				#<ActionView::OutputFlow:0x007f4f22cdb270 @content={}>
+
+@output_buffer				nil
+
+@virtual_path				nil
