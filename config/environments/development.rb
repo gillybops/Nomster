@@ -30,7 +30,8 @@ Rails.application.configure do
   end
 
   # Setup email in development for testing
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :test
+=begin
 
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
@@ -41,6 +42,7 @@ Rails.application.configure do
     user_name: ENV['GMAIL_ADDRESS'],
     password: ENV['GMAIL_PASSWORD']
   }
+=end
 
   # Don't care if the mailer can't send.
   config.action_mailer.default_url_options = { host: 'localhost:3030' }
