@@ -79,3 +79,5 @@ gem "mini_magick"
 gem 'carrierwave', '~> 1.0'
 gem 'fog-aws'
 gem 'figaro'
+# gem 'sendgrid-ruby' provides an SMTP server that hooks up with Heroku
+gem 'sendgrid-ruby'
